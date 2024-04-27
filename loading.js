@@ -33,6 +33,7 @@ function loadPhotos(photos) {
 
             if (selectedPhoto) {
                 loadPhoto(selectedPhoto);
+                document.getElementById('selected-photo-title').textContent = selectedPhoto.title;
                 loadComments(photoId); // Charge les commentaires pour cette photo
                 document.getElementById('comment-add').style.display = 'block';
             }
@@ -47,8 +48,12 @@ function loadPhotos(photos) {
 // Fonction pour charger la photo sélectionnée
 function loadPhoto(photo) {
     const selectedPhotoSection = document.getElementById('selected-photo');
+    const selectedPhotoTitle = document.getElementById('selected-photo-title');
+
     selectedPhotoSection.src = photo.large_url;
     selectedPhotoSection.alt = photo.name;
+    selectedPhotoTitle.textContent = photo.title; // Affiche le titre
+
 }
 
 // Fonction pour charger les commentaires d'une photo donnée
