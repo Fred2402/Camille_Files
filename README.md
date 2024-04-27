@@ -1,1 +1,1 @@
-**Les codes sont dans les autres branches veuillez changez de branches pour y avoir accès**
+**Les codes sont dans les autres branches veuillez changer de branches pour y avoir accès**
