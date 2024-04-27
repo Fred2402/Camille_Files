@@ -27,19 +27,19 @@ switch ($requestMethod) {
     case 'GET':
         if ($requestResource === 'photos') {
             // Renvoie des données des photos
-            $photos = [
-                ['id' => 1, 'name' => 'Photo 1', 'small_url' => 'img/small/photo1.png', 'large_url' => 'img/large/photo1.png'],
-                ['id' => 2, 'name' => 'Photo 2', 'small_url' => 'img/small/photo2.png', 'large_url' => 'img/large/photo2.png'],
-                ['id' => 3, 'name' => 'Photo 3', 'small_url' => 'img/small/photo3.png', 'large_url' => 'img/large/photo3.png'],
-                ['id' => 4, 'name' => 'Photo 4', 'small_url' => 'img/small/photo4.png', 'large_url' => 'img/large/photo4.png'],
-                ['id' => 5, 'name' => 'Photo 5', 'small_url' => 'img/small/photo5.png', 'large_url' => 'img/large/photo5.png'],
-                ['id' => 6, 'name' => 'Photo 6', 'small_url' => 'img/small/photo6.png', 'large_url' => 'img/large/photo6.png'],
-                ['id' => 7, 'name' => 'Photo 7', 'small_url' => 'img/small/photo7.png', 'large_url' => 'img/large/photo7.png'],
-                ['id' => 8, 'name' => 'Photo 8', 'small_url' => 'img/small/photo8.png', 'large_url' => 'img/large/photo8.png'],
-                ['id' => 9, 'name' => 'Photo 9', 'small_url' => 'img/small/photo9.png', 'large_url' => 'img/large/photo9.png'],
-                ['id' => 10, 'name' => 'Photo 10', 'small_url' => 'img/small/photo10.png', 'large_url' => 'img/large/photo10.png'],
-                ['id' => 11, 'name' => 'Photo 11', 'small_url' => 'img/small/photo11.png', 'large_url' => 'img/large/photo11.png'],
-                ['id' => 12, 'name' => 'Photo 12', 'small_url' => 'img/small/photo12.png', 'large_url' => 'img/large/photo12.png'],
+           $photos = [
+                ['id' => 1, 'title' => 'Rituel du temple', 'small_url' => 'img/small/photo1.png', 'large_url' => 'img/large/photo1.png'],
+                ['id' => 2, 'title' => 'Batons de prière', 'small_url' => 'img/small/photo2.png', 'large_url' => 'img/large/photo2.png'],
+                ['id' => 3, 'title' => 'Containers d\'été', 'small_url' => 'img/small/photo3.png', 'large_url' => 'img/large/photo3.png'],
+                ['id' => 4, 'title' => 'Ouverture de porte', 'small_url' => 'img/small/photo4.png', 'large_url' => 'img/large/photo4.png'],
+                ['id' => 5, 'title' => 'Amarage en liberté', 'small_url' => 'img/small/photo5.png', 'large_url' => 'img/large/photo5.png'],
+                ['id' => 6, 'title' => 'Volet ouvert', 'small_url' => 'img/small/photo6.png', 'large_url' => 'img/large/photo6.png'],
+                ['id' => 7, 'title' => 'Repos spirituel', 'small_url' => 'img/small/photo7.png', 'large_url' => 'img/large/photo7.png'],
+                ['id' => 8, 'title' => 'Trois petits lapins', 'small_url' => 'img/small/photo8.png', 'large_url' => 'img/large/photo8.png'],
+                ['id' => 9, 'title' => 'Bienvenue chez nous', 'small_url' => 'img/small/photo9.png', 'large_url' => 'img/large/photo9.png'],
+                ['id' => 10, 'title' => 'Maison vers l\'océan', 'small_url' => 'img/small/photo10.png', 'large_url' => 'img/large/photo10.png'],
+                ['id' => 11, 'title' => 'Fuite en hiver', 'small_url' => 'img/small/photo11.png', 'large_url' => 'img/large/photo11.png'],
+                ['id' => 12, 'title' => 'Entrée de verdure', 'small_url' => 'img/small/photo12.png', 'large_url' => 'img/large/photo12.png'],
             ];
             echo json_encode($photos);
         } elseif ($requestResource === 'comments') {
